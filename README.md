@@ -64,3 +64,172 @@ By combining different widgets, you can build complex UIs. For example:
 - Use `StatefulWidget` for interactive or dynamic UI elements.
 
 - Familiarize yourself with common widgets like `Text`, `Container`, `Buttons`, and `Lists`, as they form the core of most Flutter apps.
+
+# Flutter Widgets — Complete Reference Table
+
+## Basic Widgets
+| Widget | Use / Description |
+|--------|--------------------|
+| `Text` | Displays a string of text. |
+| `RichText` | Displays text with multiple styles (colors, fonts, etc.). |
+| `Image` | Displays an image (from asset, file, or network). |
+| `Icon` | Displays a Material Design icon. |
+| `Container` | A styled box for layout (color, padding, margin, etc.). |
+| `SizedBox` | Creates fixed-size boxes or spacing. |
+| `Spacer` | Adds flexible space between widgets in Row/Column. |
+| `Center` | Centers its child. |
+| `Padding` | Adds space around its child. |
+| `Align` | Aligns child within itself. |
+| `FittedBox` | Scales and positions its child. |
+| `Divider` | Draws a horizontal dividing line. |
+
+## Layout Widgets
+| Widget | Use / Description |
+|--------|--------------------|
+| `Row` | Lays out children horizontally. |
+| `Column` | Lays out children vertically. |
+| `Stack` | Overlaps widgets (Z-axis). |
+| `Expanded` | Fills remaining space in Row/Column. |
+| `Flexible` | Like Expanded with flexible sizing. |
+| `Wrap` | Wraps children to next line. |
+| `Flow` | Manual widget positioning (advanced). |
+| `GridView` | Grid layout of widgets. |
+| `ListView` | Scrollable vertical list. |
+| `SingleChildScrollView` | Makes a single child scrollable. |
+| `Table` | Displays children in rows/columns. |
+| `CustomScrollView` | Custom scroll effects with slivers. |
+| `SliverList / SliverGrid` | Efficient scrolling lists/grids. |
+
+## Input & Interaction
+| Widget | Use / Description |
+|--------|--------------------|
+| `TextField` | User text input. |
+| `Form` | Groups form fields with validation. |
+| `FormField` | Base for form inputs. |
+| `Checkbox` | True/false input selection. |
+| `Radio` | Select one value from many. |
+| `Switch` | Toggle on/off. |
+| `Slider` | Select value by sliding. |
+| `DropdownButton` | Dropdown selection. |
+| `GestureDetector` | Detects taps, swipes, drags. |
+| `InkWell` | Touch ripple effect. |
+| `ElevatedButton` | Raised button with elevation. |
+| `TextButton` | Flat text button. |
+| `OutlinedButton` | Button with outline border. |
+| `IconButton` | Icon-only button. |
+| `FloatingActionButton` | Floating circular button. |
+| `ToggleButtons` | Group of toggleable buttons. |
+
+## Styling & Theming
+| Widget | Use / Description |
+|--------|--------------------|
+| `Theme` | Defines colors, fonts, shapes. |
+| `ColorFiltered` | Applies color filter. |
+| `DecoratedBox` | Adds background, border, or shadow. |
+| `Opacity` | Adjusts transparency. |
+| `ShaderMask` | Applies gradient or shader. |
+
+## Image & Media
+| Widget | Use / Description |
+|--------|--------------------|
+| `Image.asset` | Loads image from assets. |
+| `Image.network` | Loads image from internet. |
+| `Image.file` | Loads image from filesystem. |
+| `FadeInImage` | Placeholder while loading image. |
+| `VideoPlayer` | Plays video. |
+| `CircleAvatar` | Circular profile image/initials. |
+
+## Navigation Widgets
+| Widget | Use / Description |
+|--------|--------------------|
+| `Navigator` | Manages navigation stack. |
+| `MaterialApp` | Root Material app widget. |
+| `CupertinoApp` | Root iOS-style app widget. |
+| `Scaffold` | Page structure (app bar, drawer). |
+| `AppBar` | Header bar with title/actions. |
+| `Drawer` | Side navigation menu. |
+| `BottomNavigationBar` | Bottom navigation tabs. |
+| `TabBar / TabBarView` | Tab navigation. |
+| `PageView` | Swipeable page switching. |
+
+## State Management
+| Widget | Use / Description |
+|--------|--------------------|
+| `StatefulWidget` | Maintains state across rebuilds. |
+| `StatelessWidget` | No internal state. |
+| `InheritedWidget` | Shares data down tree. |
+| `Provider` (package) | Simple state management. |
+
+## Animation Widgets
+| Widget | Use / Description |
+|--------|--------------------|
+| `AnimatedContainer` | Animates size, color, etc. |
+| `AnimatedOpacity` | Animates fade visibility. |
+| `AnimatedPositioned` | Animates Stack position. |
+| `AnimatedCrossFade` | Animates between two children. |
+| `Hero` | Screen transition animations. |
+| `FadeTransition` | Fade animation. |
+| `ScaleTransition` | Scale animation. |
+| `RotationTransition` | Rotate animation. |
+
+## Advanced Layout
+| Widget | Use / Description |
+|--------|--------------------|
+| `CustomPaint` | Draw custom shapes/graphics. |
+| `ReorderableListView` | Drag-and-drop list reordering. |
+| `LayoutBuilder` | Builds based on constraints. |
+| `AspectRatio` | Enforces width/height ratio. |
+| `FractionallySizedBox` | Sizes child by fraction. |
+| `IntrinsicHeight / IntrinsicWidth` | Sizes to child’s natural dimensions. |
+
+## Scrollable Widgets
+| Widget | Use / Description |
+|--------|--------------------|
+| `ListView.builder` | Efficient on-demand list building. |
+| `GridView.builder` | Efficient on-demand grid building. |
+| `NestedScrollView` | Nested scrolling. |
+| `Scrollbar` | Adds scrollbar indicator. |
+
+## Dialogs & Notifications
+| Widget | Use / Description |
+|--------|--------------------|
+| `AlertDialog` | Popup dialog with actions. |
+| `SimpleDialog` | Basic options dialog. |
+| `SnackBar` | Temporary bottom message. |
+| `BottomSheet` | Panel sliding from bottom. |
+| `Toast` (package) | Brief overlay message. |
+
+## App Structure
+| Widget | Use / Description |
+|--------|--------------------|
+| `MaterialApp` | Material design entry. |
+| `CupertinoApp` | iOS entry. |
+| `Scaffold` | Page layout. |
+| `SafeArea` | Avoids system UI overlaps. |
+| `WillPopScope` | Intercepts back button. |
+
+## Data & Lists
+| Widget | Use / Description |
+|--------|--------------------|
+| `FutureBuilder` | Builds from asynchronous data. |
+| `StreamBuilder` | Builds from stream updates. |
+| `ListTile` | Standard list item layout. |
+| `DataTable` | Table of data. |
+| `ExpansionTile` | Expandable list item. |
+
+## Utility Widgets
+| Widget | Use / Description |
+|--------|--------------------|
+| `Builder` | Generates a new BuildContext. |
+| `MediaQuery` | Access screen size/orientation. |
+| `Navigator` | Routing control. |
+| `FutureBuilder` | Builds async data UI. |
+| `StreamBuilder` | Live data UI builder. |
+
+## Widget Classification Summary
+| Type | Description |
+|------|-------------|
+| `StatelessWidget` | Does not hold internal state. |
+| `StatefulWidget` | Holds changing state. |
+| `InheritedWidget` | Efficient data sharing down tree. |
+| `RenderObjectWidget` | Low-level custom rendering. |
